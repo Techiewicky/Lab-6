@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Like or Dislike</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .counter {
+            display: inline-block;
+            margin: 20px;
+        }
+        button {
+            font-size: 20px;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .comments-section {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lab 6</h1>
+    <h2>Like or Dislike</h2>
+
+    <div class="counter">
+        <button id="likeBtn">👍 <span id="likeCount">100</span></button>
+    </div>
+    <div class="counter">
+        <button id="dislikeBtn">👎 <span id="dislikeCount">20</span></button>
+    </div>
+
+    <div class="comments-section">
+        <h3>Comments</h3>
+        <textarea id="commentInput" placeholder="Write a comment..."></textarea><br><br>
+        <button id="submitCommentBtn">Submit</button>
+        <button id="clearCommentBtn">Clear</button>
+    </div>
+
+    <div id="commentsDisplay"></div>
+
+    <button id="resetBtn">Reset All</button>
+
+    <script src="app.js"></script>
+</body>
+</html>
